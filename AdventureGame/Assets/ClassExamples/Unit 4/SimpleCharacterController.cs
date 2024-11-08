@@ -10,10 +10,13 @@ public class SimpleCharacterController : MonoBehaviour
     private CharacterController controller;
     private Vector3 velocity;
     private Transform thisTransform;
+    
+    public AudioSource audioSource;
 
     private void Start()
     {
         controller = GetComponent<CharacterController>();
+        audioSource = GetComponent<AudioSource>();
         thisTransform = transform;
     }
 
@@ -25,6 +28,7 @@ public class SimpleCharacterController : MonoBehaviour
         if (Input.GetButtonDown("Jump") && controller.isGrounded)
         {
             velocity.y = Mathf.Sqrt(jumpForce * -2f * gravity);
+            audioSource.Play();
         }
     }
 
@@ -34,12 +38,7 @@ public class SimpleCharacterController : MonoBehaviour
         var moveInput = Input.GetAxis("Horizontal");
         var move = new Vector3(moveInput, 0f, 0f) * (moveSpeed * Time.deltaTime);
         controller.Move(move);
-
-        // Jumping
-        if (Input.GetButtonDown("Jump") && controller.isGrounded)
-        {
-            velocity.y = Mathf.Sqrt(jumpForce * -2f * gravity);
-        }
+        
     }
 
     private void ApplyGravity()

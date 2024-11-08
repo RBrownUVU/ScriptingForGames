@@ -30,6 +30,7 @@ public class CharacterAnimationController : MonoBehaviour
         if (Input.GetButtonDown("Jump") && controller.isGrounded)
         {
             animator.SetBool(jump, true);
+          
         }
         else if (controller.isGrounded && animator.GetBool("Jump"))
         {

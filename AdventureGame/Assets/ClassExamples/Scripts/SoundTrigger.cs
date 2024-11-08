@@ -17,5 +17,14 @@ public class SoundTrigger : MonoBehaviour
     {
         audioSource.Play();
     }
+    public void OnClick()
+    {
+        audioSource.Pause();
+    }
+
+    public void OnClick2()
+    {
+        audioSource.UnPause();
+    }
 
 }
