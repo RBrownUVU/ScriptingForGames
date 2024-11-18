@@ -1,6 +1,8 @@
     using UnityEngine;
+    using UnityEngine.Events;
 
-[RequireComponent(typeof(CharacterController))]
+
+    [RequireComponent(typeof(CharacterController))]
 public class SimpleCharacterController : MonoBehaviour
 {
     public float moveSpeed = 5f;
@@ -12,6 +14,8 @@ public class SimpleCharacterController : MonoBehaviour
     private Transform thisTransform;
     
     public AudioSource audioSource;
+    public UnityEvent keypressEvent;
+   
 
     private void Start()
     {
@@ -28,7 +32,8 @@ public class SimpleCharacterController : MonoBehaviour
         if (Input.GetButtonDown("Jump") && controller.isGrounded)
         {
             velocity.y = Mathf.Sqrt(jumpForce * -2f * gravity);
-            audioSource.Play();
+            //audioSource.Play();
+            StaminaFunction();
         }
     }
 
@@ -64,4 +69,10 @@ public class SimpleCharacterController : MonoBehaviour
         currentPosition.z = 0f;
         thisTransform.position = currentPosition;
     }
+
+    private void StaminaFunction()
+    {
+        keypressEvent.Invoke();
+    }
+   
 }
