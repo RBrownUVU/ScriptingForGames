@@ -1,5 +1,6 @@
     using UnityEngine;
     using UnityEngine.Events;
+    using UnityEngine.SceneManagement;
 
 
     [RequireComponent(typeof(CharacterController))]
@@ -35,6 +36,8 @@ public class SimpleCharacterController : MonoBehaviour
             //audioSource.Play();
             StaminaFunction();
         }
+
+        QuitGame();
     }
 
     private void MoveCharacter()
@@ -73,6 +76,14 @@ public class SimpleCharacterController : MonoBehaviour
     private void StaminaFunction()
     {
         keypressEvent.Invoke();
+    }
+
+    public void QuitGame()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene(0);
+        }
     }
    
 }

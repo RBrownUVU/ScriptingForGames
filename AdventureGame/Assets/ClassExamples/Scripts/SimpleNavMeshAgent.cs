@@ -9,7 +9,8 @@ public class SimpleNavMeshAgent : MonoBehaviour
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        //agent.updateRotation = false;
+        agent.updateRotation = false;
+        
     }
 
     // Update is called once per frame
@@ -18,7 +19,6 @@ public class SimpleNavMeshAgent : MonoBehaviour
         if (target != null)
         {
             agent.SetDestination(target.position);
-            Debug.Log("Target Position: " + target.position);
         }
     }
 }
