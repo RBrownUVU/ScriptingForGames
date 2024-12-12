@@ -83,6 +83,7 @@ public class SimpleCharacterController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             SceneManager.LoadScene(0);
+            //Application.Quit();
         }
     }
    
