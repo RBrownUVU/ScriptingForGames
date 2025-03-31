@@ -1093,7 +1093,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5da9ebe2834b6c14baae8a6a4e184db9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicSource: {fileID: 1921075662}
 --- !u!4 &664397385
 Transform:
   m_ObjectHideFlags: 0
@@ -1970,6 +1969,23 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dcf484c3fd54b4c0a93bb9c7fffccd26, type: 3}
+--- !u!1 &1352012263 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1743118859410663131, guid: 12d11868995e0654c96e744b1abb9a6d, type: 3}
+  m_PrefabInstance: {fileID: 1984517048}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1352012272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352012263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1eb05af6d391b4eb0f4c070a99f1d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1390313169 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3729480264920419690, guid: dcf484c3fd54b4c0a93bb9c7fffccd26, type: 3}
@@ -2491,7 +2507,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5da9ebe2834b6c14baae8a6a4e184db9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicSource: {fileID: 1921075662}
 --- !u!1001 &1569485348
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2990,10 +3005,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: SuperFunTime
       objectReference: {fileID: 0}
+    - target: {fileID: 8180737483670037641, guid: 12d11868995e0654c96e744b1abb9a6d, type: 3}
+      propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1352012272}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1743118859410663131, guid: 12d11868995e0654c96e744b1abb9a6d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1352012272}
   m_SourcePrefab: {fileID: 100100000, guid: 12d11868995e0654c96e744b1abb9a6d, type: 3}
 --- !u!4 &2028042016 stripped
 Transform:
