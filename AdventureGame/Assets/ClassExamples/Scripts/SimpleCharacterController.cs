@@ -8,7 +8,8 @@ public class SimpleCharacterController : MonoBehaviour
     public float moveSpeed = 5f;
     public float jumpForce = 8f;
     public float gravity = -9.81f;
-
+    
+        
     private CharacterController controller;
     private Vector3 velocity;
     private Transform thisTransform;
@@ -28,6 +29,7 @@ public class SimpleCharacterController : MonoBehaviour
         MoveCharacter();
         ApplyGravity();
         KeepCharacterOnXAxis();
+        
     }
 
     private void MoveCharacter()
@@ -44,7 +46,7 @@ public class SimpleCharacterController : MonoBehaviour
             sound.Play();
         }
     }
-
+    
     private void ApplyGravity()
     {
         // Apply gravity when not grounded
