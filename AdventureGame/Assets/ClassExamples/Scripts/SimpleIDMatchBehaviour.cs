@@ -9,7 +9,11 @@ public class SimpleIDMatchBehaviour : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         var otherID = other.GetComponent<SimpleIDBehaviour>();
-        
+        if (otherID == null)
+        {
+            Debug.Log("ID is null");
+            return;
+        }
         if (otherID.id == id)
         {
             Debug.Log("Matched ID: " + id);
