@@ -1,5 +1,6 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(CharacterController))]
 
@@ -28,6 +29,7 @@ public class SimpleCharacterController : MonoBehaviour
         MoveCharacter();
         ApplyGravity();
         KeepCharacterOnXAxis();
+        QuitGame();
     }
 
     private void MoveCharacter()
@@ -45,6 +47,13 @@ public class SimpleCharacterController : MonoBehaviour
         }
     }
 
+    private void QuitGame()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene(0);
+        }
+    }
     private void ApplyGravity()
     {
         // Apply gravity when not grounded

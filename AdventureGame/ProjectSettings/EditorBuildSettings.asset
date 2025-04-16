@@ -4,6 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/MondayStartMenu.unity
+    guid: 40368a9ea486e1246a88b9305363a3ee
+  - enabled: 1
+    path: Assets/ClassExamples/Scripting 11/Scripting11.unity
+    guid: b197907f4a574496fb10439bfe2fd850
   m_configObjects: {}
-  m_UseUCBPForAssetBundles: 0

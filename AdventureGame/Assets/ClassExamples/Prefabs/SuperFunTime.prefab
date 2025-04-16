@@ -15,9 +15,10 @@ GameObject:
   - component: {fileID: 8189940185754200488}
   - component: {fileID: 5430113739277668612}
   - component: {fileID: 2563160616882234704}
+  - component: {fileID: 1724046191227263982}
   m_Layer: 0
   m_Name: SuperFunTime
-  m_TagString: Collectable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -125,7 +126,7 @@ MonoBehaviour:
   triggerEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: 31a139db05365684d88cc31e86a3c5ea, type: 2}
+      - m_Target: {fileID: 11400000, guid: 706c304c3094441ba8033c17984c05fa, type: 2}
         m_TargetAssemblyTypeName: SimpleIntData, Assembly-CSharp
         m_MethodName: UpdateValue
         m_Mode: 3
@@ -264,5 +265,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 21dcc465a099d479fbc4271e663a2814, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1724046191227263982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743118859410663131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 425fe530128de00419b31c947ec85fc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

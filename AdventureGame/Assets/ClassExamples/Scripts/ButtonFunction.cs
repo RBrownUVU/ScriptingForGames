@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class ButtonFunction : MonoBehaviour
 {
   
-    public void ButtonDoesThings()
+    public void StartGame()
     {
         SceneManager.LoadScene(1);
     }
